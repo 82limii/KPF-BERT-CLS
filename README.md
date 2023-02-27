@@ -67,8 +67,12 @@ kpf-BERT-cls는 대분류 예측 모델, 소분류 예측 모델, 지역 소분�
 3. Train
     ```
    python train.py -v (b or s or r) -s TRAIN_FILE -o MODEL_NAME 
-   (ex. python train.py -s dataset/NXEL2102203310.json -o kpf-BERT-cls)
+   (ex. python train.py -v b -s dataset/NXEL2102203310.csv -o kpf-BERT-cls)
    ```
+    -v b : 대분류
+    -v s : 소분류
+    -v r : 지역분류
+    - 학습할 데이터셋과 학습 결과 모델의 이름을 입력.
    - `kpf-BERT-cls` : KPF-BERT-CLS 모델의 저장 위치
    - `train.py` : 학습 관련 코드. 
    - 실행에 필요한 파일 : label.py, config.py, Dataset.py, kpfbert 폴더가 있어야 함.

@@ -22,9 +22,13 @@
 ![img_3](https://user-images.githubusercontent.com/87846939/221474197-2b588cea-4d73-4caf-b451-b52a10ef966d.png)
 
 BERT는 입력 길이의 제한으로 512 subword 이하의 값만 입력받을 수 있다. 기사의 특성상 인터뷰 등의 글은 512 subword보다 긴 것이 대부분이다. 이를 해결하기 위해 본 과제에서는 stride를 주어 독립적으로 문서의 조각들을 처리한다.
+
+
 ![img_1](https://user-images.githubusercontent.com/87846939/221474214-4e760c55-ba53-4e08-9154-65c73afabca6.png)
 
 kpf-BERT-cls는 대분류 예측 모델, 소분류 예측 모델, 지역 소분류 예측 모델로 구성되어 있다. 대분류/소분류 예측 모델은 top-3 결과를 출력한다.
+
+
 ![img_4](https://user-images.githubusercontent.com/87846939/221474226-fb68c3aa-b45a-4bdf-9c10-a6c98b6451e8.png)
 
 
